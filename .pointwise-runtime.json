@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "kind": "cli",
+  "setup": [
+    ["python3", "-m", "py_compile", "triangle.py", "reference.py", "main.py", "bench.py"],
+    ["python3", "-m", "unittest", "discover", "-s", "tests"]
+  ],
+  "verify": ["python3", "main.py", "verify"],
+  "demo": ["python3", "main.py", "demo"]
+}
